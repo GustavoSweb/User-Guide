@@ -6,10 +6,7 @@
     <div class="lg:flex lg:flex-col">
       <ClientCard :data="dataClient" />
       <ClientCard :data="dataClient" />
-      <ClientCard :data="dataClient" />
-      <ClientCard :data="dataClient" />
-      <ClientCard :data="dataClient" />
-      <ClientCard :data="dataClient" />
+
     </div>
   </div>
 </template>
