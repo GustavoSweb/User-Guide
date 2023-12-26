@@ -1,7 +1,10 @@
 <template>
   <div class="flex flex-col p-3 shadow-xl my-[3em] rounded-lg">
     <div class="max-w-[100%] w-[400px] justify-center flex flex-col">
-      <p class="block mb-0 text-[#00000080]">Idade: {{ data.idade }}</p>
+      <p class="block mb-0 text-[#00000080]" v-if="data.showYear == true">Idade: {{ data.idade }}</p>
+      <p v-else class="block mb-0 text-[#00000080]">
+        idade: Escondida
+      </p>
       <h3>Cliente: {{ data.name }}</h3>
     </div>
     <hr />
@@ -22,8 +25,7 @@
 export default {
   name: "Client-Card",
   props: {
-   data:Object
-
+   data:Object,
   },
 };
 </script>
